@@ -10,13 +10,13 @@ This is expected to be installed to your $PATH, and used as a single use parser 
 
 Pass in a https github url, Get a ssh one back.
 
-`echo "https://github.com/Wealthforge-Technologies/dequalify.git" | dequalify`
+`echo "https://github.com/Wealthforge-Technologies/dequalify.git" | sshnothttps`
 
 for example would return
 
 `git@github.com:Wealthforge-Technologies/dequalify.git`
 
 You can add `-h` to reverse it:
-`echo "git@github.com:Wealthforge-Technologies/dequalify.git" | dequalify -q` for example would return `https://github.com/Wealthforge-Technologies/dequalify.git`.
+`echo "git@github.com:Wealthforge-Technologies/dequalify.git" | sshnothttps -h` for example would return `https://github.com/Wealthforge-Technologies/dequalify.git`.
 
 > you might think this looks an awful lot like dequalify, and you'd be right. It's easier to write parsers like this than in bash.
